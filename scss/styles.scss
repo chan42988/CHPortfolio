@@ -2,6 +2,12 @@ $pink: #d228d2;
 $white: #ffffff;
 $grey: #464646;
 
+@mixin bg_img($url, $size, $position) {
+	background-image: url($url);
+	background-size: $size;
+	background-position: $position;
+}
+
 .cf:before, .cf:after {
 	content: "";
 	display: table;
@@ -41,4 +47,33 @@ $grey: #464646;
 	color: $white;
 	font-size: 1.1em;
 	font-family: "Bauhaus 93";
+}
+
+.work {
+	background: $grey;
+	padding: 5em 0;
+	.card {
+		background: $white;
+		border-radius: .35em;
+		height: 450px;
+		display: table;
+		background-repeat: no-repeat;
+	}
+	.card_full {
+		width: 100%;
+	}
+	.card_1 {
+		@include bg_img('../images/sjz.jpg', 80%, 280px 20px);
+	}
+	.card_inner {
+		display: table-cell;
+		vertical-align: middle;
+		height: 100%;
+		padding: 1.5em 12%;
+	}
+
+	.pink {
+		background: rgba(228, 104, 228, .6);
+		border-radius: .35em;
+	}
 }

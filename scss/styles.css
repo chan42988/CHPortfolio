@@ -31,3 +31,27 @@
   color: #ffffff;
   font-size: 1.1em;
   font-family: "Bauhaus 93"; }
+
+.work {
+  background: #464646;
+  padding: 5em 0; }
+  .work .card {
+    background: #ffffff;
+    border-radius: .35em;
+    height: 450px;
+    display: table;
+    background-repeat: no-repeat; }
+  .work .card_full {
+    width: 100%; }
+  .work .card_1 {
+    background-image: url("../images/sjz.jpg");
+    background-size: 80%;
+    background-position: 280px 20px; }
+  .work .card_inner {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    padding: 1.5em 12%; }
+  .work .pink {
+    background: rgba(228, 104, 228, 0.6);
+    border-radius: .35em; }
