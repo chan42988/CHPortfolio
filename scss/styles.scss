@@ -1,11 +1,26 @@
 $pink: #d228d2;
 $white: #ffffff;
 $grey: #464646;
+$black: #000000;
 
 @mixin bg_img($url, $size, $position) {
 	background-image: url($url);
 	background-size: $size;
 	background-position: $position;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Times New Roman";
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Times New Roman";
+	font-weight: 400;
 }
 
 .cf:before, .cf:after {
@@ -20,7 +35,10 @@ $grey: #464646;
 .wrapper {
 	width: 1000px;
 	max-width: 100%;
-	margin: 0 auto
+	margin: 0 auto;
+	a {
+			text-decoration: none;
+	}
 }
 
 .banner {
@@ -29,6 +47,7 @@ $grey: #464646;
 		float: left;
 	}
 	h1 {
+		color: $grey;
 		text-align: right;
 		font-size: 5em;
 		display: inline;
@@ -49,6 +68,18 @@ $grey: #464646;
 	font-family: "Bauhaus 93";
 }
 
+.row {
+	width: 100%;
+	margin-bottom: 2em;
+	&:before, &:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
 .work {
 	background: $grey;
 	padding: 5em 0;
@@ -62,18 +93,102 @@ $grey: #464646;
 	.card_full {
 		width: 100%;
 	}
+	.card_half {
+		width: 48.5%;
+		float: left;
+	}
+	.left {
+		margin-right: 1.5%;
+	}
+	.right {
+		margin-left: 1.5%;
+	}
+	.tall {
+		height: 700px;
+	}
 	.card_1 {
 		@include bg_img('../images/sjz.jpg', 80%, 280px 20px);
+	}
+	.card_2 {
+		@include bg_img('../images/JP.jpg', 100%, -70px 100px);
+	}
+	.card_3 {
+		@include bg_img('../images/wp.jpg', 210%, -280px 320px);
 	}
 	.card_inner {
 		display: table-cell;
 		vertical-align: middle;
 		height: 100%;
 		padding: 1.5em 12%;
+		color: $white;
+ 		p {
+ 			color: $white;
+ 			font-size: 1em;
+ 			text-transform: uppercase;
+ 			font-weight: 700;
+ 			&:hover {
+				color: $pink;
+			}
+ 		}
+ 		h2 {
+ 			color: $white;
+ 			font-size: 3em;
+ 			margin: 0;
+ 			&:hover {
+				color: $pink;
+			}
+ 		}
+	}
+
+	.pink, .green, .purple, .blue {
+		border-radius: .35em;
 	}
 
 	.pink {
-		background: rgba(228, 104, 228, .6);
-		border-radius: .35em;
+		background: rgba(228, 104, 228, .8);
+	}
+	.green {
+		background: rgba(134, 253, 151, .8);
+	}
+	.purple {
+		background: rgba(136, 110, 184, .8);
+	}
+}
+
+footer {
+	padding: 3em 0;
+	.logo {
+		float: left;
+		margin: 0;
+	} 
+	ul {
+		list-style: none;
+		margin: 0;
+		padding-top: 1em;
+		li {
+			display: inline;
+			float: left;
+			margin-left: 24em;
+			.title {
+				text-transform: uppercase;
+				font-weight: 700;
+				font-size: .75em;
+				display: block;
+				padding-bottom: .5em;
+			}
+			.links {
+				font-size: 1.75em;
+			}
+			.title {
+				color: $grey;
+			}
+			a {
+				color: $grey;
+				text-decoration: none;
+				&:hover {
+					color: $pink;
+				}
+			}
+		}
 	}
 }
