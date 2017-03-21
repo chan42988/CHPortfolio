@@ -14,13 +14,13 @@ $black: #000000;
 }
 
 body {
-	font-family: "Times New Roman";
+	font-family: "Didot";
 	-webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Times New Roman";
-	font-weight: 400;
+	font-family: "Didot";
+	font-weight: 800;
 }
 
 .cf:before, .cf:after {
@@ -65,7 +65,8 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 	color: $white;
 	font-size: 1.1em;
-	font-family: "Bauhaus 93";
+	font-weight: 800px;
+	font-family: "Didot";
 }
 
 .row {
@@ -126,9 +127,6 @@ h1, h2, h3, h4, h5, h6 {
  			font-size: 1em;
  			text-transform: uppercase;
  			font-weight: 700;
- 			&:hover {
-				color: $pink;
-			}
  		}
  		h2 {
  			color: $white;
@@ -171,12 +169,13 @@ footer {
 			margin-left: 24em;
 			.title {
 				text-transform: uppercase;
-				font-weight: 700;
+				font-weight: 800;
 				font-size: .75em;
 				display: block;
 				padding-bottom: .5em;
 			}
 			.links {
+				font-weight: 800;
 				font-size: 1.75em;
 			}
 			.title {

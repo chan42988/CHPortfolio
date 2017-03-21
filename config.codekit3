@@ -23,6 +23,14 @@
 		"oAP": "\/home.html",
 		"oF": 0
 		},
+	"\/images\/favicon-16.png": {
+		"ft": 32768,
+		"iS": 1246,
+		"oA": 0,
+		"oAP": "\/images\/favicon-16.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/images\/JP.jpg": {
 		"ft": 16384,
 		"iS": 318120,
