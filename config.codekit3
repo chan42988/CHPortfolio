@@ -31,6 +31,12 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/images\/favicon.ico": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/images\/favicon.ico",
+		"oF": 0
+		},
 	"\/images\/JP.jpg": {
 		"ft": 16384,
 		"iS": 318120,
